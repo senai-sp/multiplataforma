@@ -1,4 +1,7 @@
-# senai desenvolvedor multiplataforma web e mobile
+# Curso Desenvolvedor Multiplataforma Web e Mobile
 
-## pesquisa de disponibilidade de horários
-https://docs.google.com/forms/d/e/1FAIpQLSd5Ek1lj6bb-NXsqU3imUaf6MHDqB-S-143GEmBXlv6DC1iRQ/viewform
+## Pesquisa de Satisfação 03/09/2016
+http://goo.gl/hEbLxH
+
+## Pesquisa de Disponibilidade de Horários
+goo.gl/z7PJIw
