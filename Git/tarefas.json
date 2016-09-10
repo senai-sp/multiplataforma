@@ -1,0 +1,48 @@
+/*  
+    +-----------------------------------------------------------+  
+    |               Escola SENAI de Informática                 |
+    |                  Endeavor & J.P. Morgan                   |
+    |    Curso de Desenvolvedor Multiplataforma Web & Mobile    |
+    |               Desafio JavaScript TODO List                |
+    |           Aluno:  Victor Rubens da Silva Santos           |
+    |                   Equipe: Trade Force                     | 
+    +-----------------------------------------------------------+  
+*/
+data = [
+		{
+			"id": 1,
+			"descricao": "1 Não vamos colocar meta. Vamos deixar a meta aberta, mas, quando atingirmos a meta, vamos dobrar a meta.",
+			"feito": 1
+		},
+		{
+			"id": 2,
+			"descricao": "2 Paes é o prefeito mais feliz do mundo, que dirige a cidade mais importante do mundo e da galáxia. Por que da galáxia? Porque a galáxia é o Rio de Janeiro. A via Láctea é fichinha perto da galáxia que o nosso querido Eduardo Paes tem a honra de ser prefeito",
+			"feito": 0
+		},
+		{
+			"id": 3,
+			"descricao": "3 Eu acredito que nós teremos uns Jogos Olímpicos que vai ter uma qualidade totalmente diferente e que vai ser capaz de deixar um legado tanto… porque geralmente as pessoas pensam: ‘Ah, o legado é só depois’. Não, vai deixar um legado antes, durante e depois.",
+			"feito": 0
+		},
+		{
+			"id": 4,
+			"descricao": "4 Foi muito, houve uma procura imensa, tinham seis empresas que apresentaram suas propostas, houve um deságio de quase… Foi um pouco mais de 38%, mas eu fico em 38% para ninguém dizer: ‘Ah, ela disse que era 38′, mas não é não. É 39, 38 e qualquer coisa ou é 36. 38, eu acho que é 39, mas vou dizer 38.",
+			"feito": 1
+		},
+		{
+			"id": 5,
+			"descricao": "5 E aqui nós estamos comungando a mandioca com o milho. E, certamente, nós teremos uma série de outros produtos que foram essenciais para o desenvolvimento de toda a civilização humana ao longo dos séculos. Então, aqui, hoje, eu estou saudando a mandioca. Acho uma das maiores conquistas do Brasil.",
+			"feito": 1
+		},
+		{
+			"id": 6,
+			"descricao": "6 Todos as descrições das pessoas são sobre a humanidade do atendimento, a pessoa pega no pulso, examina, olha com carinho. Então eu acho que vai ter outra coisa, que os médicos cubanos trouxeram pro brasil, um alto grau de humanidade.",
+			"feito": 0
+		},
+		{
+			"id": 7,
+			"descricao": "7 o dia da criança é dia da mãe, do pai e das professoras, mas também é o dia dos animais. Sempre que você olha uma criança, há sempre uma figura oculta, que é um cachorro atrás, o que é algo muito importante.",
+			"feito": 0
+		}
+	]
+;

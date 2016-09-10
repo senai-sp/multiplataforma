@@ -1,0 +1,66 @@
+<!--  
+    +-----------------------------------------------------------+  
+    |               Escola SENAI de Informática                 |
+    |                  Endeavor & J.P. Morgan                   |
+    |    Curso de Desenvolvedor Multiplataforma Web & Mobile    |
+    |               Desafio JavaScript TODO List                |
+    |           Aluno:  Victor Rubens da Silva Santos           |
+    |                   Equipe: Trade Force                     | 
+    +-----------------------------------------------------------+   
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="stylesheet" type="text/css" href="assets/main.css">
+      
+      <script type="text/javascript" src="tarefas.json"></script>
+      <script type="text/javascript" src="script.js"></script>
+      <title>Desafio FrontEnd - TodoList</title>
+  </head>
+  <body onload="readJSON();">
+    <!-- APP -->
+  	<div id="app">
+      <!-- NAV -->
+  		<nav>
+  			<ul class="tabs">
+  				<li class="active" onclick="clickNaoFeitas()" id="tabNaoFeitas"><a  href="#" data-tabindex="0" title="NÃO FEITAS">NÃO FEITAS</a></li>
+  				<li onclick="clickFeitas()" id="tabFeitas"><a href="#"  data-tabindex="1" title="FEITAS">FEITAS</a></li>
+  			</ul>
+  		</nav>
+      <!-- END NAV -->
+
+      <!-- CONTEUDOTAB -->
+  		<div id="conteudoTab">
+        <!-- NAOFEITAS -->
+  			<section id="naoFeitas" class="active">
+  				<ul id="ListNaoFeitas">
+            
+        
+          </ul>
+  				<div id="formAdicionarTarefa" >
+  					<textarea name="descricao" id="txtDescricao" onkeyup="contaCaracter()"  placeholder="Insira uma tarefa"></textarea>
+  					<button onclick="addTask()" >Adicionar</button>
+  					<span id="erro"></span>
+  					<span id="contador">140</span>
+  				</div>
+  			</section>
+        <!-- END NAOFEITAS -->
+
+        <!-- FEITAS -->
+  			<section id="feitas">
+  				<ul id="ListFeitas">
+           
+          </ul>
+  			</section>
+        <!-- END FEITAS -->
+  		</div>
+      <!-- END CONTEUDOTAB -->
+
+  	</div>
+    <!-- END APP -->
+
+    
+  </body>
+</html>

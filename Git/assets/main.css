@@ -1,0 +1,206 @@
+/*  
+    +-----------------------------------------------------------+  
+    |               Escola SENAI de Informática                 |
+    |                  Endeavor & J.P. Morgan                   |
+    |    Curso de Desenvolvedor Multiplataforma Web & Mobile    |
+    |               Desafio JavaScript TODO List                |
+    |           Aluno:  Victor Rubens da Silva Santos           |
+    |                   Equipe: Trade Force                     | 
+    +-----------------------------------------------------------+  
+*/
+
+* {
+      margin: 0px;
+      padding: 0px;
+      text-decoration: none;
+      font-family: "Arial",sans-serif;
+      color: #282828;
+      box-sizing: border-box;
+      list-style-type: none;
+    }
+
+    body {
+      background: #EEE; }
+      body main {
+        background: blue;
+        color: blue;
+        font-size: 13px; }
+
+    @keyframes fadeDown {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0; }
+      100% {
+        transform: translateY(-100%);
+        opacity: 0; } }
+
+    #app {
+      position: absolute;
+      overflow: hidden;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      width: 100%;
+      max-width: 600px;
+      background: white;
+      box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.5); }
+
+    .tabs {
+      padding: 20px;
+      padding-bottom: 0px;
+      margin-bottom: 5px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 10;
+      box-sizing: initial;
+      margin: -20px;
+      margin-bottom: 0px;
+      display: flex; }
+      .tabs > li {
+        flex: 1 1 50%; }
+        .tabs > li a {
+          width: 100%;
+          display: block;
+          text-align: center;
+          font-weight: bold;
+          padding: 10px; }
+
+    #conteudoTab {
+      position: relative;
+      height: 700px; }
+      #conteudoTab ul {
+        margin: 0px -20px; }
+        #conteudoTab ul:hover li {
+          opacity: 0.5;
+          transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
+          #conteudoTab ul:hover li:hover {
+            opacity: 1; }
+      #conteudoTab li {
+        padding: 15px 20px; }
+        #conteudoTab li:nth-child(even) {
+          background: #ebf3fd; }
+        #conteudoTab li label {
+          cursor: pointer;
+          display: flex; }
+          #conteudoTab li label > * {
+            flex: 1; }
+          #conteudoTab li label input {
+            flex: 0 0 20px;
+            align-self: center;
+            margin-right: 10px; }
+          #conteudoTab li label a {
+            opacity: 0;
+            flex: 0 0 10px;
+            align-self: center;
+            font-size: 24px;
+            margin-left: 10px;
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
+          #conteudoTab li label:hover a {
+            opacity: 1; }
+
+    button {
+      border: none;
+      background: #03A9F4;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-weight: 14px;
+      box-shadow: 0px 2px 7px rgba(64, 70, 74, 0.4);
+      border-radius: 3px;
+      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+      cursor: pointer; }
+      button:focus, button:hover {
+        background: #148ec5; }
+
+    #formAdicionarTarefa {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      display: flex;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      position: absolute; }
+      #formAdicionarTarefa > * {
+        flex: 1; }
+      #formAdicionarTarefa button {
+        flex: 0 0 100px; }
+      #formAdicionarTarefa textarea {
+        font-size: 17px;
+        padding: 10px 10px;
+        max-height: 90px;
+        min-height: 90px;
+        border: 0px;
+        border-bottom: solid 2px #9e9e9e; }
+        #formAdicionarTarefa textarea:focus {
+          border-color: #03a9f4; }
+      #formAdicionarTarefa #contador {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        font-weight: bold;
+        font-size: 16px;
+        text-align: right; }
+
+    #naoFeitas,
+    #feitas {
+      background: white;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      opacity: 0;
+      visibility: hidden;
+      max-height: 100%;
+      transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1); }
+      #naoFeitas ul,
+      #feitas ul {
+        overflow-y: auto;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 135px; }
+
+    #naoFeitas {
+      transform: translateX(-100%); }
+
+    #feitas {
+      transform: translateX(100%); }
+      #feitas ul {
+        bottom: 0px; }
+
+    .tabs li a {
+      opacity: 0.2;
+      position: relative;
+      padding-bottom: 20px; }
+      .tabs li a::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 4px;
+        background: #21a0c7;
+        display: block;
+        width: 100%;
+        transform: scaleX(0);
+        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
+
+    .tabs li.active a {
+      opacity: 1; }
+      .tabs li.active a::before {
+        transform: scaleX(1); }
+
+    #feitas.active,
+    #naoFeitas.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0px); }
+
+    #erro {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      color: #e00000; }
