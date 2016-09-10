@@ -1,12 +1,7 @@
 /*  
     +-----------------------------------------------------------+  
-    |               Escola SENAI de Informática                 |
-    |                  Endeavor & J.P. Morgan                   |
-    |    Curso de Desenvolvedor Multiplataforma Web & Mobile    |
-    |               Desafio JavaScript TODO List                |
-    |           Aluno:  Victor Rubens da Silva Santos           |
-    |                   Equipe: Trade Force                     | 
-    +-----------------------------------------------------------+  
+    |                       Bug no código                       |
+    +-----------------------------------------------------------+   
 */
     var count = 8;
     function readJSON() {
