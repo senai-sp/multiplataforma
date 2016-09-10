@@ -1,0 +1,17 @@
+.pesquisa {
+  padding: 24px;
+}
+
+.pesquisa input {
+  padding: 16px;
+  width: 100%;
+  box-shadow: 1px 2px 5px rgba(0,0,0,.2);
+  will-change: box-shadow;
+  transition: box-shadow 0.3s ease-in;
+}
+
+.pesquisa input:hover,
+.pesquisa input:focus,
+.pesquisa input:active {
+  box-shadow: 2px 3px 5px rgba(0,0,0,.3);
+}
