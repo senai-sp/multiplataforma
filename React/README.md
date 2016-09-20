@@ -1,0 +1,14 @@
+# React
+
+Pessoal comentaram sábado que o Code Academy acabou de abrir de um curso queReact e outro de Git, então seguem os links.
+
+[React](https://www.codecademy.com/learn/react-101)
+
+[Git](https://www.codecademy.com/pt-BR/learn/learn-git)
+
+
+## Apresentações
+
+[Apresentação 1](https://github.com/senai-sp/multiplataforma/raw/master/React/React1.pdf)
+
+[Apresentação 2](https://github.com/senai-sp/multiplataforma/raw/master/React/React2.pdf)
