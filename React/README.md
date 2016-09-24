@@ -17,3 +17,7 @@ Pessoal comentaram sábado que o Code Academy acabou de abrir de um curso queRea
 [Apresentação 1](https://github.com/senai-sp/multiplataforma/raw/master/React/React1.pdf)
 
 [Apresentação 2](https://github.com/senai-sp/multiplataforma/raw/master/React/React2.pdf)
+
+[Apresentação 3](https://github.com/senai-sp/multiplataforma/raw/master/React/React3.pdf)
+
+[REST](https://github.com/senai-sp/multiplataforma/raw/master/React/Rest.pdf)
