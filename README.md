@@ -1,7 +1,10 @@
 # Curso Desenvolvedor Multiplataforma Web e Mobile
 
-##Pesquisa de Satisfação
+##Pesquisa de Satisfação - 1º Ciclo de Workshops
 https://goo.gl/D2Y5ow
+
+##Inscrições para o 2º Ciclo de Workshops
+https://goo.gl/G4MC0O
 
 <!-- ##Inscrições para Cursos Complementares
 http://goo.gl/VOs9Vu -->
